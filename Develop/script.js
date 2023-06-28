@@ -9,6 +9,10 @@ function writePassword() {
   passwordText.value = password;
 
 }
+function generatePassword(){
+
+  return "RandomPassword";
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
