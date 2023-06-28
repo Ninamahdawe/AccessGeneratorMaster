@@ -1,3 +1,3 @@
-# PasswordGenMaster
+# AccessGeneratorMaster
 
 ## desciption
