@@ -18,8 +18,13 @@ function writePassword() {
 //prompt the useer//
 // get users desiered password length
 //var con = confirm("Did you choose your password?")
-
 function generatePassword() {
+
+}
+
+
+
+function getpromots() {
   var choiceArray = [];
   var typeCheck = false
   var characterLength = parseInt(prompt("Please select the length of your password between 8 and 128 characters"));
@@ -51,16 +56,9 @@ function generatePassword() {
     typeCheck = true
 
   }
+
   // this is to do about check if user has choose one type of character
-  var choicesArray = ['A', '@', 'f']
-  var password = "";
 
-  for (var i = 0; i < passwordLength; i++) {
-    var randomNumber = Math.floor(Match.random() * choicesArray.length);
-
-    var randomCharacter = choicesArray[randomNumber];
-    password = password + randomCharacter;
-  }
 
 
   return choiceArray.join("");
