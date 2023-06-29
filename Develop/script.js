@@ -52,7 +52,15 @@ function generatePassword() {
 
   }
   // this is to do about check if user has choose one type of character
+  var choicesArray = ['A', '@', 'f']
+  var password = "";
 
+  for (var i = 0; i < passwordLength; i++) {
+    var randomNumber = Math.floor(Match.random() * choicesArray.length);
+
+    var randomCharacter = choicesArray[randomNumber];
+    password = password + randomCharacter;
+  }
 
 
   return choiceArray.join("");
