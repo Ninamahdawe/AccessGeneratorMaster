@@ -1,4 +1,3 @@
-
 // Assignment Code
 var charactertype = [];
 //var choiceArray = [];
@@ -8,8 +7,6 @@ var specialCharactersArrayy = ["+", "-", "&&", "||", "!", "(", ")", "{", "}", "[
 var numberArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 var generateBtn = document.querySelector("#generate");
-generateBtn.addEventListener("click", writePassword);
-
 
 // Write password to the #password input
 function writePassword() {
@@ -55,17 +52,11 @@ function generatePassword() {
     typeCheck = true
 
   }
-  var password = "";
-
-  for (var i = 0; i < characterLength; ++i) {
-    var randomindex = Math.floor(Math.random() * choiceArray.Length);
-    password += choiceArray[randomIndex]
-  }
   // this is to do about check if user has choose one type of character
 
 
 
-  return password;
+  return choiceArray.join("");
 }
 
 
@@ -82,4 +73,5 @@ function generatePassword() {
 //generate the random password with the user options
 
 // Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
