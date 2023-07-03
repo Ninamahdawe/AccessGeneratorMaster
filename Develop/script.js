@@ -24,12 +24,18 @@ function generatePassword() {
   var typeCheck = false
   var characterLength = parseInt(prompt("Please select the length of your password between 8 and 128 characters"));
 
+  //check if the length is 8 - 128
+
   if (isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
     alert(
       "Password length is incorrect please enter a number 8 - 128! try again "
     );
     return "";
   }
+  //generate the random password with the user options
+  //find out which characters they want to use
+
+
   if (confirm("Would you like your password to have a lowercase letter?")) {
     choiceArray = choiceArray.concat(lowerCaseArray);
     typeCheck = true
@@ -50,6 +56,8 @@ function generatePassword() {
     choiceArray = choiceArray.concat(numberArray);
     typeCheck = true
 
+  } else {
+    choiceArray = choiceArray.concat(numberArray);
   }
   // this is to do about check if user has choose one type of character
   if (!typeCheck) {
@@ -62,27 +70,10 @@ function generatePassword() {
     var randomIndex = Math.floor(Math.random() * choiceArray.length);
     password += choiceArray[randomIndex];
   }
+  // return generatePassword
 
   return password;
 }
-
-generateBtn.addEventListener("click", writePassword);
-
-
-
-
-
-
-
-// return generatePassword()
-
-//check if the length is 8 - 128
-
-//find out which characters they want to use
-
-//check if the user picked at least one character type
-
-//generate the random password with the user options
-
 // Add event listener to generate button
 
+generateBtn.addEventListener("click", writePassword);
