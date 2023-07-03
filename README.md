@@ -18,4 +18,3 @@ After selecting OK, the fourth prompt will ask the user if they Would like their
 After selecting Ok, the fifth propmt will ask the user if they Would like their password to have numbers.
 And their password will be generated! with the prompt message ("Congratulations! Your password has been created.");
 
-![Website screenshot](/accessGeneratorMaster/images/passwordgen.png)
