@@ -19,7 +19,10 @@ After selecting Ok, the fifth propmt will ask the user if they Would like their 
 And their password will be generated! with the prompt message ("Congratulations! Your password has been created.");
 
 ![Website screenshot](/Assets/images/passwordgen.png)
-![link to deployed website](https://ninamahdawe.github.io/AccessGeneratorMaster/)
+
+## project link
+
+https://ninamahdawe.github.io/AccessGeneratorMaster/
 
 ## source code
 
