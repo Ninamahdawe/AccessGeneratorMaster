@@ -57,9 +57,6 @@ function generatePassword() {
   if (confirm("Would you like your password to have numbers?")) {
     choiceArray = choiceArray.concat(numberArray);
     typeCheck = true
-
-  } else {
-    choiceArray = choiceArray.concat(numberArray);
   }
   // this is to do about check if user has choose one type of character
   if (!typeCheck) {
