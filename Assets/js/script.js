@@ -32,7 +32,7 @@ function generatePassword() {
     alert(
       "Password length is incorrect please enter a number 8 - 128! try again "
     );
-    return "";
+    return generatePassword();
   }
   //generate the random password with the user options
   //find out which characters they want to use
@@ -61,7 +61,7 @@ function generatePassword() {
   // this is to do about check if user has choose one type of character
   if (!typeCheck) {
     alert("You must choose at least one character type for your password.");
-    return "";
+    return generatePassword();
   }
 
   var password = "";
